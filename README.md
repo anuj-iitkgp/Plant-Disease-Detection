@@ -1,8 +1,6 @@
-# 🌱 Plant Disease Detection & Agricultural AI Analytics
+# 🌱 Plant Disease Detection using Deep Learning
 
 An end-to-end Deep Learning and Computer Vision project for identifying plant diseases across 38 distinct crop categories using the **PlantVillage** dataset. This repository benchmarks a **Custom Convolutional Neural Network (CNN)** against **Transfer Learning with DenseNet-121**, demonstrating state-of-the-art diagnostic performance.
-
-Additionally, this repository contains an environmental forecasting module for predicting daily **PM2.5 Air Quality** levels from multi-year meteorological data.
 
 ---
 
@@ -12,7 +10,6 @@ Additionally, this repository contains an environmental forecasting module for p
 | :--- | :---: | :---: |
 | **CNN & DenseNet-121 Benchmark** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_CNN_and_DenseNet121_by_Anuj.ipynb) | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_CNN_and_DenseNet121_by_Anuj.ipynb) |
 | **DenseNet-121 Pretrained Pipeline** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_Pretrained_by_Anuj_final.ipynb) | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_Pretrained_by_Anuj_final.ipynb) |
-| **PM2.5 Air Quality Forecasting** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/PM25_Air_Quality_Prediction_FINAL.ipynb) | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/PM25_Air_Quality_Prediction_FINAL.ipynb) |
 
 ---
 
@@ -23,7 +20,6 @@ Additionally, this repository contains an environmental forecasting module for p
 - [Repository Structure](#-repository-structure)
 - [Dataset](#-dataset)
 - [Model Architecture & Methodology](#-model-architecture--methodology)
-- [Environmental Module: PM2.5 Air Quality Prediction](#-environmental-module-pm25-air-quality-prediction)
 - [Getting Started](#-getting-started)
 - [Tech Stack](#-tech-stack)
 - [Author](#-author)
@@ -84,7 +80,6 @@ Both models were evaluated on an unseen stratified test set:
 │   └── sample_dataset_images.png
 ├── Disease_Prediction_CNN_and_DenseNet121_by_Anuj.ipynb   # Complete pipeline comparing Custom CNN & DenseNet-121
 ├── Disease_Prediction_Pretrained_by_Anuj_final.ipynb      # Finalized transfer learning notebook with inference pipeline
-├── PM25_Air_Quality_Prediction_FINAL.ipynb                # Environmental forecasting (Regression & Deep Learning)
 ├── .gitignore                                             # Excludes datasets, model weights, and cache
 └── README.md                                              # Project documentation
 ```
@@ -125,21 +120,6 @@ The project uses the **PlantVillage** dataset containing leaf images across heal
 
 ---
 
-## 🌫 Environmental Module: PM2.5 Air Quality Prediction
-
-In addition to leaf vision tasks, `PM25_Air_Quality_Prediction_FINAL.ipynb` implements a complete predictive analytics pipeline for environmental air quality:
-- **Target:** Daily $PM_{2.5}$ concentration levels.
-- **Features:** Temperature, humidity, wind speed, pressure, and lagged temporal variables.
-- **Algorithms Tested:**
-  - Linear Regression
-  - Decision Trees & Random Forest Regressor
-  - K-Nearest Neighbors (KNN)
-  - Support Vector Regression (SVR)
-  - XGBoost (with GridSearchCV hyperparameter tuning)
-  - Deep Multilayer Perceptron (MLP) Neural Network
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -161,7 +141,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 Install dependencies:
 ```bash
-pip install tensorflow keras torch torchvision pandas numpy matplotlib seaborn scikit-learn xgboost kagglehub
+pip install tensorflow keras torch torchvision pandas numpy matplotlib seaborn scikit-learn kagglehub
 ```
 
 ### Running the Notebooks
@@ -170,13 +150,13 @@ Launch Jupyter Lab or Notebook:
 jupyter notebook
 ```
 - Open `Disease_Prediction_CNN_and_DenseNet121_by_Anuj.ipynb` to inspect training, evaluation, and comparisons.
-- Open `PM25_Air_Quality_Prediction_FINAL.ipynb` for the meteorological air quality forecasting models.
+- Open `Disease_Prediction_Pretrained_by_Anuj_final.ipynb` to inspect the dedicated transfer learning inference pipeline.
 
 ---
 
 ## 💻 Tech Stack
 
-- **Deep Learning & ML:** TensorFlow, Keras, Scikit-Learn, XGBoost
+- **Deep Learning & ML:** TensorFlow, Keras, Scikit-Learn
 - **Data Manipulation:** NumPy, Pandas
 - **Visualization:** Matplotlib, Seaborn
 - **Environment:** Jupyter Notebook, KaggleHub
