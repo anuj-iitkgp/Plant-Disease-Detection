@@ -6,9 +6,20 @@ Additionally, this repository contains an environmental forecasting module for p
 
 ---
 
+### 🚀 Interactive Notebooks
+
+| Notebook | Open in Colab | Fast Web Viewer |
+| :--- | :---: | :---: |
+| **CNN & DenseNet-121 Benchmark** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_CNN_and_DenseNet121_by_Anuj.ipynb) | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_CNN_and_DenseNet121_by_Anuj.ipynb) |
+| **DenseNet-121 Pretrained Pipeline** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_Pretrained_by_Anuj_final.ipynb) | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/Disease_Prediction_Pretrained_by_Anuj_final.ipynb) |
+| **PM2.5 Air Quality Forecasting** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/PM25_Air_Quality_Prediction_FINAL.ipynb) | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/anuj-iitkgp/Plant-Disease-Detection/blob/main/PM25_Air_Quality_Prediction_FINAL.ipynb) |
+
+---
+
 ## 📌 Table of Contents
 - [Overview](#-overview)
 - [Key Results](#-key-results)
+- [Visualizations & Performance](#-visualizations--performance)
 - [Repository Structure](#-repository-structure)
 - [Dataset](#-dataset)
 - [Model Architecture & Methodology](#-model-architecture--methodology)
@@ -47,9 +58,30 @@ Both models were evaluated on an unseen stratified test set:
 
 ---
 
+## 📈 Visualizations & Performance
+
+### 1. Model Comparison
+![Model Comparison](assets/cnn_vs_densenet121_comparison.png)
+
+### 2. DenseNet-121 Training Dynamics
+![DenseNet121 Training Performance](assets/densenet121_training_performance.png)
+
+### 3. DenseNet-121 Confusion Matrix
+![Confusion Matrix](assets/densenet121_confusion_matrix.png)
+
+### 4. Sample Leaves from the Dataset
+![Sample Dataset Leaves](assets/sample_dataset_images.png)
+
+---
+
 ## 📂 Repository Structure
 
 ```plaintext
+├── assets/                                                # Visualization charts and performance plots
+│   ├── cnn_vs_densenet121_comparison.png
+│   ├── densenet121_training_performance.png
+│   ├── densenet121_confusion_matrix.png
+│   └── sample_dataset_images.png
 ├── Disease_Prediction_CNN_and_DenseNet121_by_Anuj.ipynb   # Complete pipeline comparing Custom CNN & DenseNet-121
 ├── Disease_Prediction_Pretrained_by_Anuj_final.ipynb      # Finalized transfer learning notebook with inference pipeline
 ├── PM25_Air_Quality_Prediction_FINAL.ipynb                # Environmental forecasting (Regression & Deep Learning)

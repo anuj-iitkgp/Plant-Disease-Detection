@@ -33,3 +33,6 @@ PlantVillage_Cleaned.zip
 *.pth
 *.pkl
 *.onnx
+
+# Local backups
+backup_notebooks_with_outputs/
