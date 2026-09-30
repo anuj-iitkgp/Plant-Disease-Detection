@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Datasets (downloaded via KaggleHub in notebooks)
+PlantVillage_Cleaned/
+PlantVillage_Cleaned.zip
+*.zip
+*.tar.gz
+
+# Model weights and artifacts
+*.keras
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.pkl
+*.onnx
